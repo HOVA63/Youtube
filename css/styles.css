@@ -1,0 +1,189 @@
+body {
+    margin: 0%;
+}
+
+svg {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+header {
+    height: 56px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    margin: 0%;
+    position: sticky;
+    top: 0%;
+}
+
+header .start {
+    height: 56px;
+    width: 169px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .center {
+    height: 40px;
+    width: 732px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .end {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .end .create {
+    width: 97px;
+    height: 36px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40%;
+}
+
+header .end .create .create_text {
+    font-family: sans-serif;
+}
+
+header button {
+    height: 40px;
+    width: 40px;
+}
+
+header button div {
+    padding: 8px 0px;
+}
+
+header .logo {
+    height: 20px;
+    width: 93px;
+    padding: 18px 14px 18px 16px;
+}
+
+header img {
+    height: 32px;
+    width: 32px;
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+
+
+.page_guider {
+    display: flex;
+    height: 100vh;
+}
+.flex-item{
+    height: 100%;
+    overflow: auto;
+}
+
+.page_guider span {
+    width: 132px;
+    height: 20px;
+}
+
+
+main {
+    width: 1345px;
+}
+
+.section-bar {
+    position: sticky;
+    top: 7.5%;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sidebar_navigation {
+    width: 15vw;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar_navigation .nav-section_home_tab {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+
+.sidebar_navigation .nav-section_home_tab .home_you {
+    padding-top: 12px;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: lightgray;
+    margin-top: 1px;
+}
+
+.sidebar_navigation .nav-section {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+
+.nav_header_text {
+    padding: 12px 6px 12px 4px;
+}
+
+.sidebar_navigation .nav-section img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.sidebar_navigation .footer-links_one {
+    padding: 16px 24px 0px 24px;
+}
+
+.sidebar_navigation .footer-links_two {
+    padding: 24px 12px 0px 24px;
+}
+
+.sidebar_navigation .footer-links a {
+    margin-right: 8px;
+}
+
+.sidebar_navigation .copyright {
+    padding: 24px 16px 16px 24px;
+}
+
+.nav-item {
+    width: 180px;
+    height: 40px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
