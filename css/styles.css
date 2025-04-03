@@ -48,6 +48,13 @@ header .center {
     flex-direction: row;
 }
 
+header .center .search-container {
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 header .end {
     width: 225px;
     display: flex;
@@ -210,7 +217,6 @@ main .category-filter {
     flex-direction: row;
     gap: 1%;
     flex-wrap: nowrap;
-    position: ;
 }
 
 main .category-filter button {
