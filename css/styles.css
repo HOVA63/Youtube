@@ -4,7 +4,6 @@ body {
     margin: 0%;
     font-size: 14px;
     font-family: sans-serif;
-    max-width: min-content;
 }
 
 svg {
@@ -38,6 +37,17 @@ header .start {
     width: 169px;
     display: flex;
     flex-direction: row;
+}
+
+header .start .search-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.search_with_cancelbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 header .center {
