@@ -14,3 +14,6 @@ cancelButton.addEventListener('click', () => {
     cancelButton.style.display = 'none';
     searchBox.focus();
 });
+
+const sideBar = document.getElementById('sideBar');
+const menuButton = document.getElementById('menuButton');
