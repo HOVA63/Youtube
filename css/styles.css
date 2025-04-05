@@ -65,6 +65,10 @@ header .center .search-container {
     align-items: center;
 }
 
+.search-button {
+    display: none;
+}
+
 header .end {
     width: 225px;
     display: flex;
