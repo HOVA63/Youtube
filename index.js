@@ -17,3 +17,8 @@ cancelButton.addEventListener('click', () => {
 
 const sideBar = document.getElementById('sideBar');
 const menuButton = document.getElementById('menuButton');
+const main = document.getElementById('main');
+
+menuButton.addEventListener('click', () => {
+    sideBar.classList.toggle('collapsed');
+});
