@@ -21,4 +21,5 @@ const main = document.getElementById('main');
 
 menuButton.addEventListener('click', () => {
     sideBar.classList.toggle('collapsed');
+    main.classList.toggle('collapsed');
 });

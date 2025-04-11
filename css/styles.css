@@ -118,6 +118,7 @@ header img {
 .page_guider {
     display: flex;
     height: 100vh;
+    gap: 5rem;
 }
 .flex-item{
     height: 100%;
@@ -131,10 +132,19 @@ header img {
 
 
 main {
-    width: 1345px;
+    width: 80rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
+    top: auto;
+    left: 15rem;
+    transition: margin-left 0.3s ease;
+}
+
+main.collpased {
+    left: 5.4rem;
+    width: fit-content;
 }
 
 .section-bar {
