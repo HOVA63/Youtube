@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     margin: 0%;
     font-size: 14px;
@@ -29,7 +27,7 @@ header {
     padding: 0px 16px;
     margin: 0%;
     position: sticky;
-    top: 0%;
+    top: 0px;
 }
 
 header .start {
@@ -90,6 +88,10 @@ header .end .create .create_text {
     font-family: sans-serif;
 }
 
+header .end .profile_picture {
+    border-radius: 50%;
+}
+
 header button {
     height: 40px;
     width: 40px;
@@ -113,13 +115,15 @@ header img {
 .icon {
     height: 24px;
     width: 24px;
+    border-radius: 50%;
 }
 
 .page_guider {
     display: flex;
-    height: 100vh;
+    height: fit-content;
     gap: 5rem;
 }
+
 .flex-item{
     height: 100%;
     overflow: auto;
@@ -129,7 +133,6 @@ header img {
     width: 132px;
     height: 20px;
 }
-
 
 main {
     width: 80rem;
@@ -269,6 +272,11 @@ main.collpased {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    background-color: #f2f2f2;
 }
 
 main {
@@ -307,4 +315,14 @@ main .videos {
     flex-wrap: wrap;
     position: relative;
     top: 3rem;
+}
+
+.thumbnail {
+    width: 421.656px;
+    height: 337.500px;
+}
+
+.thumbnail.collpased {
+    width: 477.656px;
+    height: 369px;
 }
