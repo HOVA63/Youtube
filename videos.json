@@ -2,6 +2,43 @@
     {
         "title": "Jasmine cooking review",
         "url": "https://streamable.com/8czf40",
-        "thumbnail": "img\\thumbnails\\jasmine_cooking_review.png"
+        "thumbnail": "img/thumbnails/jasmine_cooking_review.png",
+        "channelName": "Jasmine",
+        "channelLogo": "img/Channel_logo/jasmine.jpg"
+    },
+    {
+        "title": "Maryam my hommie",
+        "url": "https://streamable.com/v6shsi",
+        "thumbnail": "img/thumbnails/maryam_with_cap.jpg",
+        "channelName": "Maryam",
+        "channelLogo": "img/Channel_logo/maryam.jpg"
+    },
+    {
+        "title": "Aisha walking on the road",
+        "url": "https://streamable.com/r9ekum",
+        "thumbnail": "img/thumbnails/Aisha_thumbs_up.jpg",
+        "channelName": "Cranium baby",
+        "channelLogo": "img/Channel_logo/aisha.jpg"
+    },
+    {
+        "title": "Yimika fit check",
+        "url": "https://streamable.com/xm2rcr",
+        "thumbnail": "img/thumbnails/yimika_on_the_beach.jpg",
+        "channelName": "Yimika",
+        "channelLogo": "img/Channel_logo/yimika.jpg"
+    },
+    {
+        "title": "Praise being Praise",
+        "url": "https://streamable.com/y637a5",
+        "thumbnail": "img/thumbnails/praise_selfie.png",
+        "channelName": "Praise Chiwendu Norbert",
+        "channelLogo": "img/Channel_logo/praise.png"
+    }, 
+    {
+        "title": "MJ bloopers",
+        "url": "https://streamable.com/o23eu6",
+        "thumbnail": "img/thumbnails/praise_selfie.png",
+        "channelName": "Praise Chiwendu Norbert",
+        "channelLogo": "img/Channel_logo/maryjane.jpg"
     }
 ]

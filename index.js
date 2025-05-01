@@ -38,7 +38,7 @@ fetch('videos.json')
                 const seconds = Math.floor(duration % 60);
 
                 const paddedSeconds = seconds < 10 ? `0${seconds}` : seconds;
-                const videoLenght = `${minutes}:${paddedSeconds}`;
+                const videoLength = `${minutes}:${paddedSeconds}`;
             });
         });
     })
