@@ -24,24 +24,59 @@ menuButton.addEventListener('click', () => {
     main.classList.toggle('collapsed');
 });
 
+const videoContainer = document.querySelector('.videos');
+
 fetch('videos.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP Error! status: ${response.status}`);
+        } 
+        return response.json();
+    })
     .then(videos => {
         videos.forEach(video => {
-            const videoElement = document.createElement('video');
-            videoElement.src = video.url;
-            videoElement.preload = "metadata";
+            const videoCard = document.createElement('div');
+            videoCard.classList.add('video-card');
 
-            videoElement.addEventListener('loadedmetadata', () => {
-                const duration = videoElement.duration;
-                const minutes = Math.floor(duration / 60);
-                const seconds = Math.floor(duration % 60);
+            const thumbnailImg = document.createElement('img');
+            thumbnailImg.src = video.thumbnail;
+            thumbnailImg.alt = video.title;
+            thumbnailImg.classList.add('video-thumbnail');
 
-                const paddedSeconds = seconds < 10 ? `0${seconds}` : seconds;
-                const videoLength = `${minutes}:${paddedSeconds}`;
-            });
+            const videoDuration = document.createElement('div');
+            videoDuration.textContent = video.duration;
+            videoDuration.classList.add('video-duration');
+
+            const thumbnailWrapper = document.createElement('div');
+            thumbnailWrapper.classList.add('thumbnail-wrapper');
+            thumbnailWrapper.appendChild(thumbnailImg);
+            thumbnailWrapper.appendChild(videoDuration);
+
+            const videoTitle = document.createElement('h3');
+            videoTitle.textContent = video.title;
+            videoTitle.classList.add('video-title');
+
+            const videoMeta = document.createElement('div');
+            videoMeta.classList.add('video-meta');
+
+            const channelName =  document.createElement('p');
+            channelName.textContent = video.channelName;
+            channelName.classList.add('channel-name');
+
+            const videoStats = document.createElement('p');
+            videoStats.textContent = video.views + "•" + video.uploadedAgo;
+            videoStats.classList.add('video-stats');
+
+            videoMeta.appendChild(channelName);
+            videoMeta.appendChild(videoStats);
+
+            videoCard.appendChild(thumbnailWrapper);
+            videoCard.appendChild(videoMeta);
+            videoCard.appendChild(videoTitle);
+
+            videoContainer.appendChild(videoCard);
         });
     })
     .catch(error => {
-        console.log('Error loading video');
+        console.error(`Error fetching or parsing video data: `, error)
     });
