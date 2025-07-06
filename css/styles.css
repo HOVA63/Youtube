@@ -28,6 +28,8 @@ header {
     margin: 0%;
     position: sticky;
     top: 0px;
+    left: 0;
+    right: 0;
 }
 
 header .start {
@@ -326,4 +328,13 @@ main .videos {
 .thumbnail.collpased {
     width: 477.656px;
     height: 369px;
+}
+
+.video-card {
+    width: 421.66px;
+    height: 337.17px;
+}
+
+.video-thumbnail {
+    height: 237.17px;
 }
