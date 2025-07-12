@@ -60,18 +60,24 @@ header .center {
 }
 
 header .center .search-container {
-    width: 732;
+    width: 640px;
+    display: flex;
+    flex-direction: row;
 }
 
 header .center .search-container .search-with-cancelbar {
     width: 640px;
+    display: flex;
+    flex-direction: row;
 }
 
 header .end {
-    height: 71%;
+    height: 40px;
+    width: 213px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
 }
 
 header .end .create {
@@ -297,6 +303,7 @@ main.collpased {
 }
 
 main {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -312,11 +319,15 @@ main.collapsed {
 }
 
 main .category-filter {
+    width: 100%;
+    height: 56px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1%;
     flex-wrap: nowrap;
     position: fixed;
+    background-color: white;
 }
 
 main .category-filter button {
@@ -329,11 +340,13 @@ main .category-filter button {
 }
 
 main .videos {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     top: 3rem;
+    z-index: -1000;
 }
 
 .thumbnail {
