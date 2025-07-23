@@ -4,41 +4,53 @@
         "url": "https://streamable.com/8czf40",
         "thumbnail": "img/thumbnails/jasmine_cooking_review.png",
         "channelName": "Jasmine",
-        "channelLogo": "img/Channel_logo/jasmine.jpg"
+        "channelLogo": "img/Channel_logo/jasmine.jpg",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     },
     {
         "title": "Maryam my hommie",
         "url": "https://streamable.com/v6shsi",
         "thumbnail": "img/thumbnails/maryam_with_cap.jpg",
         "channelName": "Maryam",
-        "channelLogo": "img/Channel_logo/maryam.jpg"
+        "channelLogo": "img/Channel_logo/maryam.jpg",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     },
     {
         "title": "Aisha walking on the road",
         "url": "https://streamable.com/r9ekum",
         "thumbnail": "img/thumbnails/Aisha_thumbs_up.jpg",
         "channelName": "Cranium baby",
-        "channelLogo": "img/Channel_logo/aisha.jpg"
+        "channelLogo": "img/Channel_logo/aisha.jpg",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     },
     {
         "title": "Yimika fit check",
         "url": "https://streamable.com/xm2rcr",
         "thumbnail": "img/thumbnails/yimika_on_the_beach.jpg",
         "channelName": "Yimika",
-        "channelLogo": "img/Channel_logo/yimika.jpg"
+        "channelLogo": "img/Channel_logo/yimika.jpg",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     },
     {
         "title": "Praise being Praise",
         "url": "https://streamable.com/y637a5",
         "thumbnail": "img/thumbnails/praise_selfie.png",
         "channelName": "Praise Chiwendu Norbert",
-        "channelLogo": "img/Channel_logo/praise.png"
+        "channelLogo": "img/Channel_logo/praise.png",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     }, 
     {
         "title": "MJ bloopers",
         "url": "https://streamable.com/o23eu6",
         "thumbnail": "img/thumbnails/mj_at_the_beach.png",
         "channelName": "MaryJane",
-        "channelLogo": "img/Channel_logo/maryjane.jpg"
+        "channelLogo": "img/Channel_logo/maryjane.jpg",
+        "views": "0 views",
+        "uploadedAgo": "50d"
     }
 ]

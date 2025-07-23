@@ -2,8 +2,8 @@ body {
     margin: 0;
     font-size: 0.9rem;
     font-family: sans-serif;
-    width: 100%;
-    overflow: hidden;
+    width: 100vw;
+    overflow: auto;
 }
 
 svg {
@@ -129,7 +129,7 @@ header .end .profile-picture {
     justify-content: center;
 }
 
-header .end .profile-picture img {
+header .end .profile-picture img, .channel-logo {
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -143,6 +143,7 @@ header .end .profile-picture img {
 
 .page_guider {
     display: flex;
+    flex-direction: row;
     height: fit-content;
     gap: 5rem;
 }
@@ -158,11 +159,10 @@ header .end .profile-picture img {
 }
 
 main {
-    width: 80rem;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
     top: auto;
     left: 15rem;
     transition: margin-left 0.3s ease;
@@ -186,8 +186,7 @@ main.collpased {
     transform: translateX(0);
     position: fixed;
     top: auto;
-    left: 0;
-    z-index: 1000;
+    z-index: -1;
 }
 
 .sidebar_navigation span {
@@ -311,7 +310,6 @@ main {
     left: 15rem;
     transition: margin-left 0.3s ease;
     overflow-y: auto;
-    position: fixed;
 }
 
 main.collapsed {
@@ -346,7 +344,7 @@ main .videos {
     flex-wrap: wrap;
     position: relative;
     top: 3rem;
-    z-index: -1000;
+    z-index: -1;
 }
 
 .thumbnail {
@@ -366,4 +364,9 @@ main .videos {
 
 .video-thumbnail {
     height: 237.17px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: row;
 }
