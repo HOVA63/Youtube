@@ -40,8 +40,9 @@ fetch('videos.json')
             videoDuration.textContent = video.duration;
             videoDuration.classList.add('video-duration');
 
-            const thumbnailWrapper = document.createElement('div');
+            const thumbnailWrapper = document.createElement('a');
             thumbnailWrapper.classList.add('thumbnail-wrapper');
+            thumbnailWrapper.href = `video.html?id=${video.id}`;
             thumbnailWrapper.appendChild(thumbnailImg);
             thumbnailWrapper.appendChild(videoDuration);
 
@@ -62,6 +63,9 @@ fetch('videos.json')
             channelLogo.alt = video.channelName;
             channelLogo.classList.add('channel-logo');
 
+            const channelLink = document.createElement('a');
+            channelLink.appendChild(channelLogo);
+
             const videoMeta = document.createElement('div');
             videoMeta.classList.add('video-meta');
             videoMeta.appendChild(videoTitle);
@@ -70,7 +74,7 @@ fetch('videos.json')
 
             const videoInfo = document.createElement('div');
             videoInfo.classList.add('video-info');
-            videoInfo.appendChild(channelLogo);
+            videoInfo.appendChild(channelLink);
             videoInfo.appendChild(videoMeta);
 
             const videoCard = document.createElement('div');

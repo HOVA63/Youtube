@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     padding: 0 1vw;
     background-color: white;
+    position: sticky;
 }
 
 header .start {
@@ -359,7 +360,10 @@ main .videos {
 
 .video-card {
     width: 421.66px;
-    height: 337.17px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .video-thumbnail {
@@ -369,4 +373,6 @@ main .videos {
 .video-info {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
 }

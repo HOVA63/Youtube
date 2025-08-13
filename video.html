@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <title>youtube-clone</title>
+        <script src="video.js" defer></script>
     </head>
     <body>
         <header>
@@ -85,39 +86,9 @@
             </div>
         </header>
         <main>
-            <div class="video_and_comments">
-                <div class="video_player">
-
-                </div>
-                <div class="text_section">
-                    <div class="video_title">
-
-                    </div>
-                    <div class="author_info">
-
-                    </div>
-                    <div class="descriptions">
-
-                    </div>
-                    <div class="comments_section">
-                        <div class="comments_header">
-
-                        </div>
-                        <div class="comments_body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav_and_videos">
-                <nav>
-
-                </nav>
-                <div class="videos_container">
-                    <div class="sidebar_video">
-
-                    </div>
-            </div>
+            <video id="player" controls autoplay muted playsinline preload="metadata" poster=" "></video>
+            <h1 id="title"></h1>
+            <p id="description"></p>
         </main>
     </body>
 </html>
