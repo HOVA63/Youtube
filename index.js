@@ -12,11 +12,7 @@ const cancelButton = document.getElementById('cancelButton');
 cancelButton.style.display = 'none';
 
 searchBar.addEventListener('input', () => {
-    if(searchBar.value !== '') {
-        cancelButton.style.display = 'block';
-    } else {
-        cancelButton.style.display = 'none';
-    };
+    cancelButton.style.display = searchBar.value !== '' ? 'block' : 'none';
 });
 
 cancelButton.addEventListener('click', () => {
@@ -64,6 +60,8 @@ fetch('videos.json')
             channelLogo.classList.add('channel-logo');
 
             const channelLink = document.createElement('a');
+            channelLink.classList.add('channel-link');
+            channelLink.href = "#";
             channelLink.appendChild(channelLogo);
 
             const videoMeta = document.createElement('div');

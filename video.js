@@ -1,5 +1,10 @@
 fetch('videos.json')
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) {
+            throw new Error('Failed to load new videos!')
+        }
+        return res.json()
+    })
     .then(videos => {
         const params = new URLSearchParams(window.location.search);
         const videoId = params.get('id');
