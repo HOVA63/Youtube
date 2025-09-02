@@ -118,137 +118,53 @@ header .end .create {
   border-radius: 50%;
 }
 
-.sidebar_navigation {
-  width: 15vw;
-  height: 100vh;
-  overflow-y: auto;
-  position: fixed;
-  top: 56px;
-  left: 0;
-  border-right: 1px solid #ddd;
-  background: #fff;
-  transition: width 0.3s ease;
+.watch-container {
+    display: flex;
+    justify-content: center;
 }
 
-.sidebar_navigation.collapsed {
-  width: 72px;
+.watch-page {
+  gap: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.sidebar_navigation.collapsed .home_you,
-.sidebar_navigation.collapsed .nav-section,
-.sidebar_navigation.collapsed .footer-links {
-  display: none;
-}
-
-.sidebar_navigation.collapsed .nav-item {
+.watch-left {
+  flex: 2.5;
+  display: flex;
   flex-direction: column;
 }
 
-.sidebar_navigation.collapsed .nav-item span {
-  font-size: 10px;
-}
-
-.sidebar_navigation .nav-section img {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
-
-.nav-item {
+.watch-right {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 10px;
-  border-radius: 8px;
+  gap: 0.75rem;
 }
 
-.nav-item:hover {
-  background: #f2f2f2;
+#player {
+    width: 853px;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
 }
 
-main {
-  margin-left: 15vw;
-  padding: 1rem;
-  transition: margin-left 0.3s ease;
-}
-
-main.collapsed {
-  margin-left: 72px;
-}
-
-.category-filter {
+.recommended-card {
+  max-width: 350px;
   display: flex;
+  text-decoration: none;
   gap: 0.5rem;
-  padding: 0.5rem;
-  position: sticky;
-  top: 56px;
-  background: #fff;
+  margin-bottom: 1rem;
 }
 
-.category-filter button {
-  padding: 6px 12px;
-  border-radius: 12px;
-  background: #f2f2f2;
-  font-size: 14px;
-}
-
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.video-card {
-  width: 360px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.video-thumbnail {
-  width: 100%;
-  aspect-ratio: 16/9;
+.recommended-card img {
+  width: 168px;
+  height: 94px;
   border-radius: 8px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
-.video-info {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.channel-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-}
-
-.video-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 2px; 
-  overflow: hidden;
-}
-
-.video-title {
+.recommended-card p {
   font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
   margin: 0;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; 
-  -webkit-box-orient: vertical;
-}
-
-.channel-name,
-.video-stats {
-  font-size: 12px;
-  color: #606060;
-  margin: 0;
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.3;
 }

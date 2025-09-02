@@ -42,6 +42,4 @@ fetch('videos.json')
 
             recommendedDiv.appendChild(link);
         });
-
-
     })
